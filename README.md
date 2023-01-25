@@ -24,5 +24,9 @@ Upon entering the correct credentials, a webpage with with 4 "modes" of responsi
    1. <Still working on deplying the github link!! - will update in a future commit> OR, alternatively
    2. Open index.html in your favorite browser!
 
+# Sources / Credits
+- Image on Login Page: Photo by <a href="https://unsplash.com/de/@lishakov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrej Lišakov</a> on <a href="https://unsplash.com/s/photos/printing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
 # Author
 Manasvini Munjal

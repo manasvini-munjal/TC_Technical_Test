@@ -1,0 +1,275 @@
+/**
+  * TABLE OF CONTENTS
+  *
+  * SETTINGS
+  * Root....................Variables
+  *
+  * Global..................Globally-available variables and config.
+  *
+  * GENERIC
+  * Box-sixing..............Better default `box-sizing`.
+  *
+  * BASE
+  * Headings................h1-h6 styles.
+  * Buttons.................Button elements
+  * 
+  * SECTIONS
+  * #LOGIN-SECTION
+  * #RESPONSIVE-PAGE-SECTION
+  *
+  * RESPONSIVE
+  * Media Queries........... Cross-browser styling
+  */
+
+
+
+
+
+
+/*----------------------------------- *\
+       #GLOBAL
+\*----------------------------------- */
+
+:root {
+    --alpha-light: 0.8;
+    --alpha-dark: 0.15;
+    --white: 255,255,255;
+    --off-white: 250,249,246;
+    --dark-grey: 51,51,51;
+    --light-grey: 242,242,242;
+    --brand-blue: 10,35,65;
+    --black: 0,0,0;
+    --red: 196,30,58;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(var(--off-white));
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  section {
+    padding: 80px 20px;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  ::placeholder {
+    color: rgb(var(--dark-grey));
+    opacity: 1;
+    /* Firefox */
+  }
+  
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(var(--dark-grey));
+  }
+  
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(var(--dark-grey));
+  }
+  
+  /**
+    * o- prefic for global styles :
+    * layout can be applied
+    * for other layouts throughout the site.
+    */
+  
+  .o-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .o-media__header {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(var(--off-white));
+  }
+  
+  .o-media__content {
+    font-size: 18px;
+    color: rgb(var(--off-white));
+    padding: 10px 20px;
+    flex: 1;
+  }
+  
+  .o-brand h3 {
+    margin-top: -4px;
+  }
+  
+  .o-brand__info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .o-brand__info p {
+    flex: 1;
+  }
+  
+  .o-brand__info p strong {
+    margin-right: 10px;
+  }
+  
+  .o-push--right {
+    margin-left: auto;
+  }
+  
+  .o-btn-primary{
+    display: block;
+    margin-top: 20px;
+    background-color:rgb(var(--brand-blue));
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.07s ease-in-out;
+  }
+  
+  .o-btn-primary:hover {
+    padding: 12px 24px;
+    font-weight: 900;
+  }
+  
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .o-required:after {
+    content: ' *';
+    font-size: 14px;
+    color: rgb(var(--red));
+  }
+  
+  input:invalid {
+    border-color: red;
+  }
+  
+  input:valid {
+    border-color: green;
+  }
+  
+  
+
+
+
+
+/*----------------------------------- *\
+       #LOGIN-SECTION
+\*----------------------------------- */
+.c-login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .c-login__wrapper {
+    -webkit-box-shadow: 0px 21px 41px -13px rgba(var(--black), var(--alpha-dark));
+    -moz-box-shadow: 0px 21px 41px -13px rgba(var(--black), var(--alpha-dark));
+    box-shadow: 0px 21px 41px -13px rgba(var(--black), var(--alpha-dark));
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1000px;
+    border-radius: 7px;
+    overflow: hidden;
+  }
+  
+  .form--login {
+    max-width: 750px;
+    background: rgba(var(--light-grey), var(--alpha-light));
+    height: 100%;
+    padding: 40px 20px;
+    flex: 1
+  }
+  
+  .c-login__wrapper .o-brand {
+    padding: 36px;
+    color: rgb(var(--white));
+    background: rgb(var(--brand-blue));
+    flex: 1;
+  }
+  
+  .form--login .form__label {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  
+  .form--login .form__input {
+    border: none;
+    background: rgb(var(--light-grey));
+    border-bottom: 1px solid rgba(var(--black), var(--alpha-dark));
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .form--login .form__input:focus,
+  .form--login .form__input:active {
+    border: none;
+    border-bottom: 1px solid rgb(var(--brand-blue));
+  }
+  
+  .form--login .form__input:focus-visible {
+    outline: none;
+  }
+  
+  .form--login h3 {
+    margin-top: 12px;
+  }
+
+
+  .c-login__column.o-brand {
+    background: url("./images/andrej-lisakov-V2OyJtFqEtY-unsplash.jpg");
+    background-size: cover;
+  }
+
+
+  
+  
+  /*----------------------------------- *\
+       #RESPONSIVE
+\*----------------------------------- */
+
+/* 
+  ##Device = Laptops, Desktops, Tablets, Ipads, Mobiles
+  ##Screen = Below 1280PX;
+*/
+
+@media screen and (max-width: 1280px) {
+    .o-info__container {
+      flex-wrap: wrap;
+    }
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops, Tablets, Ipads, Mobiles
+    ##Screen = Below 1024PX;
+  */
+  
+  @media screen and (max-width: 1024px) {
+    .c-login__wrapper {
+      flex-direction: column;
+    }
+  }
+  

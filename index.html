@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page | Manasvini's TC Technical Test</title>
+    <link rel='stylesheet' href='styles.css'>
 </head>
 <body>
-    
+    <section class='c-login-section'>
+        <div class='container'>
+          <div class='c-login__wrapper'>
+            <div class='c-login__column'>
+              <form class='form form--login'>
+                <h3>Log In</h3>
+                <label class='form__label  o-required' for='userName'>User Name</label>
+                <input class='form__input' type='text' id='userName' name='userName' placeholder='userName' aria-required="true">
+  
+                <label class='form__label  o-required' for='password'>Password</label>
+                <input class='form__input' type='password' id='password' name='password' placeholder='password' aria-required="true">
+  
+                <input class='form__submit form__submit--disabled o-btn-primary' type='submit' value='Log In'>
+              </form>
+            </div>
+  
+            <div class='c-login__column o-brand'>
+                <div class='o-brand__info'>
+                  <p class='text'><strong>LinkedIn:</strong>https://linkedin.com/in/manasvini-munjal</p>
+                </div>
+                <div class='o-brand__info'>
+                  <p class='text'><strong>GitHub:</strong>https://github.com/manasvini-munjal</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
 </body>
 </html>
