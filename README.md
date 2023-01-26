@@ -4,6 +4,7 @@
 A fluid HTML5 page containing a simple login form for user's username and password as follows:
   - username: admin
   - password: password
+  
 Upon entering the correct credentials, a webpage with with 4 "modes" of responsiveness are displayed
   1. Desktop (from 3/4 width of the screen to 100%) 
   2. Tablet (between half and 3/4 of the screen) 
